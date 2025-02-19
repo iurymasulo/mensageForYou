@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Mensage For You</title>
+	<style>
+		body {
+			background-image: url("Captura de tela 2025-02-19 025134.png"); 
+			background-size: cover; /* Faz a imagem cobrir toda a página */
+			background-position: center; /* Garante que a imagem fique centralizada */
+			background-attachment: fixed; /* A imagem fica fixa quando você rola a página */
+			height: 100vh; /* Garante que o fundo ocupe toda a altura da janela */
+			margin: 0; /* Remove margens padrão do body */
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-family: Arial;  
+		}
+
+		div {
+			display: flex;
+			flex-direction: column;
+			width: 400px;
+			border: 1px solid #fafafa;
+			padding: 15px 25px;
+			border-radius: 10px;
+			background: rgba(250, 250, 250, 0.8); /* Tornar o fundo do formulário levemente transparente */
+		}
+
+		h1 {
+			text-align: center;
+		}
+
+		input {
+			height: 25px; 
+			margin-bottom: 10px;
+			padding: 0 5px;
+		}
+
+		button {
+			height: 50px;
+			font-size: 15px;
+			text-transform: uppercase;
+			font-weight: 700;
+			margin: 15px 0;
+			border: 0;
+			border-radius: 10px;
+			background: #a468d9;
+			color: #fff;
+			cursor: pointer;
+		}
+
+	</style>
+</head>
+<body>
+	<div>
+		<h1>Mensage For You 💝</h1>
+
+		<p>"𝘿𝙤𝙘 𝙛𝙚𝙞𝙩𝙤 𝙥𝙖𝙧𝙖 𝙪𝙢𝙖 𝘽𝙞𝙤́𝙡𝙤𝙜𝙖 𝙦𝙪𝙚 𝙃𝙖𝙘𝙠𝙚𝙤𝙪 𝙢𝙚𝙪 𝙘𝙤𝙧𝙖𝙘̧𝙖̃𝙤"</p>
+
+		<label for="altura">Digite o dia de hoje:</label>
+		<input type="number" id="dataHoje">
+
+		<label for="peso">Digite um codinome pelo qual te chamo:</label>
+		<input type="text" id="nomeUsuario">
+
+		<button id="mensage07">Clique p/ ver a mensagem do seu 07</button>
+	</div>
+
+	<script>
+		// Corrigindo a referência para pegar o botão pelo ID
+		document.getElementById("mensage07").addEventListener("click", () => {
+			var diaHoje = +document.getElementById("dataHoje").value;
+			var nameUser = document.getElementById("nomeUsuario").value;
+
+			var mensagem = "Olá minha Princesinha! Peguei todo o código de amor do mundo, criptografei e armazenei no meu coração pra te entregar. Sinta daí meu beijão e meu abração minha gatinha. Por você eu hackearia a Nasa e até a SpaceX, mas foi você quem Hackeou meu coração. E nele tem memória RAM infinita pra senhorita. <3 Eu te amo meu grande amor, Muitãozão e feliz niver pá noix " + nameUser + " #19 🌷";
+
+			alert(mensagem);			
+		});
+	</script>
+</body>
+</html>
